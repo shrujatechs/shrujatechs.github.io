@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shruja Techs Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shruja Mehta — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello, this is my portfolio!</h1>
-    <p>My GitHub Pages site will be live soon.</p>
+  <main class="container">
+    <header class="hero">
+      <!-- Optional: upload avatar.png to repo to show profile image -->
+      <img class="avatar" src="avatar.png" alt="Shruja Mehta" onerror="this.style.display='none'">
+      <h1>Shruja Mehta</h1>
+      <p class="tagline">Student • Aspiring Web Developer</p>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Hi! I'm Shruja, a student passionate about learning web development. I enjoy creating projects that help me practice HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Example Project 1</strong> — A short description. <a href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+        <li><strong>Example Project 2</strong> — A short description. <a href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="connect" class="card">
+      <h2>Connect with Me</h2>
+      <p class="social">
+        <a href="mailto:shrujatechs@gmail.com" aria-label="Email">Email</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Shruja Mehta — <a href="https://github.com/shrujatechs" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
