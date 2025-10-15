@@ -1,4 +1,4 @@
-/* Reset */
+/* ===== Reset & Fonts ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +6,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #111;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 nav h1 {
   font-size: 28px;
@@ -40,7 +40,7 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 #hero {
   display: flex;
   flex-direction: column;
@@ -51,10 +51,12 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   padding: 0 20px;
+  animation: fadeIn 2s ease-in;
 }
 #hero h2 {
   font-size: 48px;
   margin-bottom: 20px;
+  animation: slideUp 1.5s ease forwards;
 }
 #hero p {
   font-size: 20px;
@@ -62,23 +64,25 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
-/* Section Headings */
+/* ===== Section Headings ===== */
 section h2 {
   font-size: 36px;
   margin-bottom: 40px;
   color: #00ffff;
+  text-align: center;
 }
 
-/* About Section */
+/* ===== About Section ===== */
 #about p {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   font-size: 18px;
   line-height: 1.6;
   color: #ccc;
+  text-align: center;
 }
 
-/* Projects Section */
+/* ===== Projects Section ===== */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +90,7 @@ section h2 {
   gap: 30px;
 }
 .project-card {
-  background-color: #222;
+  background-color: #1a1a1a;
   border-radius: 15px;
   width: 280px;
   overflow: hidden;
@@ -100,6 +104,7 @@ section h2 {
 .project-card img {
   width: 100%;
   display: block;
+  border-bottom: 1px solid #333;
 }
 .project-card h3 {
   color: #00ffff;
@@ -125,12 +130,13 @@ section h2 {
   background-color: #00bbbb;
 }
 
-/* Contact Section */
+/* ===== Contact Section ===== */
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  padding-bottom: 50px;
 }
 #contact a {
   color: #00ffff;
@@ -148,24 +154,33 @@ section h2 {
   margin-top: 15px;
 }
 .contact-icons a img {
-  width: 35px;
+  width: 40px;
   transition: transform 0.3s;
 }
 .contact-icons a:hover img {
   transform: scale(1.2);
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
   background-color: #111;
   color: #ccc;
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
   font-size: 14px;
 }
 
-/* Responsive */
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideUp {
+  from {opacity: 0; transform: translateY(50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
