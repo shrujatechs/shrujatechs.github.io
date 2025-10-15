@@ -1,0 +1,106 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Container ===== */
+.resume-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 36px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+header .contact a {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+header .contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 25px;
+}
+section h2 {
+  font-size: 28px;
+  color: #00ffff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+section p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ===== Jobs & Projects ===== */
+.job, .project {
+  margin-bottom: 15px;
+}
+.job h3, .project h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.job span {
+  font-size: 14px;
+  color: #00bbbb;
+  display: block;
+  margin-bottom: 5px;
+}
+.job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #ccc;
+}
+
+/* ===== Skills ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.skills li {
+  background-color: #00ffff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 20px;
+}
